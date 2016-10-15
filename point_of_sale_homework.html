@@ -99,13 +99,12 @@
 		function markItemSold(itemObj) {
 			// todo: take in an item reference, and update
 			// the new quantity of that item
-		}
 		  // if there is an item in a customer's cart, then we subtract 1 from inventory quanity from that items quanity in inventory. Then return quanity of that item.// 
 
 
 		  for (var i = 0; i < customers.length; i++) {
 		  	var customer = customers[i];
-		  	var cartArr = customer.cart
+		  	var cartArr = customer.cart;
 		  	for (var j = 0; j < cartArr.length; j++) {
 		  		var item = getItemByID(cartArr[j]);
 		  		if (item == item.Obj) {
@@ -151,7 +150,7 @@
 			return customers[customers.length -1].name;
 
 		}
-		var Kathryn = "Kathryn"
+		var Kathryn = "Kathryn";
 		createNewCustomer(Kathryn);
 		console.log(customers);
 
@@ -162,9 +161,8 @@
 			inventory.push({name: "Gummy Worms",
 				price: 125,			
 				 id: 12519});
-			return inventory [inventory.lenth-1]
+			return inventory [inventory.lenth-1];
 		}
-
 
 	</script>
 </body>
